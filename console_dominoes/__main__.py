@@ -83,7 +83,6 @@ def screen_size():
     
 def main():
     screen_size()
-    time.sleep(5)
     clear()
     intro()
     show = DominoSet()
