@@ -426,7 +426,7 @@ def noMoreMoves(player,width,height,player_hand,robo_hand,gamescore):
     print(f"Your Hand Totals: {ptotal}".center(width,' '))
     print(Game.__str__(player_hand,width))
     print(f"Computer\'s Hand Totals: {rtotal}".center(width,' '))
-    print(Game.__str__(player_hand,width))
+    print(Game.__str__(robo_hand,width))
     time.sleep(3)
     winner(player,width,height,gamescore)
      
