@@ -103,8 +103,6 @@ def robo_normal(robo_hand,gameboard,remaining,play,width,height,player_hand,play
         key=key1[0]
         gameboard = toplay(anIndex,robo_hand,gameboard,key)
     if len(anIndex) >1:
-        
-        time.sleep(3)
         playable=[]
         k = anIndex.keys()
         for key in k:
