@@ -219,7 +219,7 @@ def robo_pass(width,height,player_hand,robo_hand,left,right,player,gamescore):
     for i in range(len(player_hand.hand)):
         tile= player_hand.hand[i]
         anIndex = inIt(i,tile,left,right,anIndex) 
-        if anIndex>0:
+        if len(anIndex)>0:
             break
     print("Computer cannot make a valid move. Computer passed.".center(width,' ')+ '\n')    
     if anIndex>0:
