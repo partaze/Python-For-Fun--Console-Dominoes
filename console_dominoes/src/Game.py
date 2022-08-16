@@ -433,7 +433,7 @@ def noMoreMoves(player,width,height,player_hand,robo_hand,gamescore):
 def findTotal(self):
     total=0
     for tile in self.hand:
-        t=self.total
+        t=tile.total
         total+=t
     return total
         
