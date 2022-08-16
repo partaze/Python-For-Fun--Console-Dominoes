@@ -417,7 +417,7 @@ def noMoreMoves(player,width,height,player_hand,robo_hand,gamescore):
     gamescore.set_playerpoints(ptotal)
     rtotal=findTotal(robo_hand)
     gamescore.set_robopoints(rtotal)
-    if ptotal>rtotal:
+    if ptotal<rtotal:
         player=True
     else:
         player=False
@@ -433,7 +433,8 @@ def noMoreMoves(player,width,height,player_hand,robo_hand,gamescore):
 def findTotal(self):
     total=0
     for tile in self.hand:
-        total+=self.total
+        t=self.total
+        total+=t
     return total
         
 def giveup(height,width,player,first,gameboard,remaining,play,gamescore):
