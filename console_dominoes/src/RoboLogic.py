@@ -215,7 +215,7 @@ def toplay(anIndex,robo_hand,gameboard,key):
 
 def robo_pass(width,height,player_hand,robo_hand,left,right,player,gamescore):
     from src.Game import noMoreMoves
-    anIndex = []
+    anIndex = {}
     for i in range(len(player_hand.hand)):
         tile= player_hand.hand[i]
         anIndex = inIt(i,tile,left,right,anIndex) 
