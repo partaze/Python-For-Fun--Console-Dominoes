@@ -222,7 +222,7 @@ def robo_pass(width,height,player_hand,robo_hand,left,right,player,gamescore):
         if len(anIndex)>0:
             break
     print("Computer cannot make a valid move. Computer passed.".center(width,' ')+ '\n')    
-    if len(anIndex)>0:
+    if len(anIndex)==0:
         print("You cannot make a valid move.".center(width,' ')+ '\n') 
         time.sleep(2.5)
         noMoreMoves(player,width,height,player_hand,robo_hand,gamescore)
